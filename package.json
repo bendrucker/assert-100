@@ -1,0 +1,38 @@
+{
+  "name": "assert-100",
+  "bin":{
+    "100": "./cli.js"
+  },
+  "version": "0.0.0",
+  "description": "Assert 100% coverage via nyc",
+  "license": "MIT",
+  "repository": "bendrucker/assert-100",
+  "author": {
+    "name": "Ben Drucker",
+    "email": "bvdrucker@gmail.com",
+    "url": "bendrucker.me"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "keywords": [
+    "assert",
+    "coverage",
+    "cli",
+    "nyc",
+    "istanbul",
+    "test"
+  ],
+  "devDependencies": {
+    "nyc": "^7.1.0",
+    "standard": "^7.0.0",
+    "tape": "^4.0.0"
+  },
+  "files": [
+    "*.js"
+  ],
+  "dependencies": {
+    "flatten": "~1.0.2",
+    "foreground-child": "~1.5.3"
+  }
+}
