@@ -13,7 +13,7 @@ const args = process.argv.slice(2)
 
 if (!args.length) {
   const pkg = require('./package.json')
-  return console.log(`
+  console.log(`
     ${pkg.description}
 
     Usage
@@ -25,7 +25,6 @@ if (!args.length) {
     Options:
       https://github.com/istanbuljs/nyc
 
-
     **   ****   ****
    ***  *///** *///**
   //** /*  */*/*  */*
@@ -35,13 +34,13 @@ if (!args.length) {
    ****/ **** / ****
   ////  ////   ////
   `)
+} else {
+  foreground(nyc, flatten([
+    '--check-coverage',
+    types.map(toFlag),
+    process.argv.slice(2)
+  ]))
 }
-
-foreground(nyc, flatten([
-  '--check-coverage',
-  types.map(toFlag),
-  process.argv.slice(2)
-]))
 
 function toFlag (type) {
   return `--${type}=100`
