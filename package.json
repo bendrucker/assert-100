@@ -1,9 +1,9 @@
 {
   "name": "assert-100",
-  "bin":{
+  "bin": {
     "100": "./cli.js"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Assert 100% coverage via nyc",
   "license": "MIT",
   "repository": "bendrucker/assert-100",
