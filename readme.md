@@ -1,4 +1,4 @@
-# assert-100 [![Build Status](https://travis-ci.org/bendrucker/assert-100.svg?branch=master)](https://travis-ci.org/bendrucker/assert-100)
+# assert-100 [![Build Status](https://travis-ci.org/bendrucker/assert-100.svg?branch=master)](https://travis-ci.org/bendrucker/assert-100) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/assert-100.svg)](https://greenkeeper.io/)
 
 > Assert 💯 coverage via [nyc](https://github.com/istanbuljs/nyc)
 
